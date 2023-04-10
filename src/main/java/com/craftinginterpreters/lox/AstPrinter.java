@@ -53,6 +53,12 @@ public class AstPrinter implements Expr.Visitor<String> {
     }
 
     @Override
+    public String visitSuperExpr(Expr.Super expr) {
+        // TODO: Unimplemented.
+        return null;
+    }
+
+    @Override
     public String visitThisExpr(Expr.This expr) {
         // TODO: Unimplemented.
         return null;
