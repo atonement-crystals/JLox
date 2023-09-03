@@ -65,7 +65,6 @@ public class Interpreter implements Expr.Visitor<Object>,
         return null;
     }
 
-    // TODO: Position in https://craftinginterpreters.com/classes.html.
     @Override
     public Void visitClassStmt(Stmt.Class stmt) {
         Object superclass = null;

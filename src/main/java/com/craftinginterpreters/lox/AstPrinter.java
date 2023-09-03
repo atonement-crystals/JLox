@@ -1,5 +1,13 @@
 package com.craftinginterpreters.lox;
 
+/**
+ * AstPrinter is included only as it was a part of the Crafting Interpreters
+ * tutorial. Methods marked as unimplemented are included with a minimum
+ * implementation only to enable the project to compile per the {@code
+ * Expr.Visitor} interface.<br/>
+ * <br/>
+ * This class is not used or referenced anywhere across the project code.
+ */
 public class AstPrinter implements Expr.Visitor<String> {
     String print(Expr expr) {
         return expr.accept(this);
@@ -7,7 +15,7 @@ public class AstPrinter implements Expr.Visitor<String> {
 
     @Override
     public String visitAssignExpr(Expr.Assign expr) {
-        // TODO: Unimplemented.
+        // Unimplemented.
         return null;
     }
 
@@ -19,13 +27,13 @@ public class AstPrinter implements Expr.Visitor<String> {
 
     @Override
     public String visitCallExpr(Expr.Call expr) {
-        // TODO: Unimplemented.
+        // Unimplemented.
         return null;
     }
 
     @Override
     public String visitGetExpr(Expr.Get expr) {
-        // TODO: Unimplemented.
+        // Unimplemented.
         return null;
     }
 
@@ -42,25 +50,25 @@ public class AstPrinter implements Expr.Visitor<String> {
 
     @Override
     public String visitLogicalExpr(Expr.Logical expr) {
-        // TODO: Unimplemented.
+        // Unimplemented.
         return null;
     }
 
     @Override
     public String visitSetExpr(Expr.Set expr) {
-        // TODO: Unimplemented.
+        // Unimplemented.
         return null;
     }
 
     @Override
     public String visitSuperExpr(Expr.Super expr) {
-        // TODO: Unimplemented.
+        // Unimplemented.
         return null;
     }
 
     @Override
     public String visitThisExpr(Expr.This expr) {
-        // TODO: Unimplemented.
+        // Unimplemented.
         return null;
     }
 
@@ -71,7 +79,7 @@ public class AstPrinter implements Expr.Visitor<String> {
 
     @Override
     public String visitVariableExpr(Expr.Variable expr) {
-        // TODO: Not implemented.
+        // Not implemented.
         return  null;
     }
 
@@ -88,6 +96,10 @@ public class AstPrinter implements Expr.Visitor<String> {
         return builder.toString();
     }
 
+    /**
+     * Example use of the AstPrinter for supported types.
+     * @param args Unused.
+     */
     public static void main(String[] args) {
         Expr expression = new Expr.Binary(
                 new Expr.Unary(
